@@ -4,11 +4,12 @@
 - pull this file <br>
 - start docker on your local machine <br>
 - open terminal and run: mvn clean package <br>
-- open terminal and start command: docker-compose up <br>
-- open browser: http://localhost:6868/swagger-ui/#/ <br>
-- H2 connected, please follow the link: http://localhost:8080/h2-console ##password -> root##<br>
-- I added some scripts for creating table and filling it with data, so...<br>
-  everything prepared to working<br>
+- open terminal and run command: 'docker build -t base-test-project .' <br>
+- and then run: 'docker run -p 8085:8080 base-test-project' <br>
+- in your browser open http://localhost:8085/swagger-ui/#/ and http://localhost:8085/h2-console <br>
+  (JDBC URL: jdbc:h2:mem:test and User Name: root) <br>
+- I added some scripts for creating table and filling it with data, so... <br>
+  everything prepared to work <br>
 
 <h3>Project description:</h3>
 Base-Test-Project not a big app with one endpoint: <br>
@@ -25,3 +26,4 @@ layer were covered with tests. End-To-End tests are also present. <br>
 - liquibase <br>
 - swagger <br>
 - junit <br>
+- docker <br>
