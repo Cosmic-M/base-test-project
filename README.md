@@ -16,7 +16,7 @@ Base-Test-Project not a big app with one endpoint: <br>
 GET: /persons/{id} : get person from DB by id <br>
 In service's layer of an app its derives a person from DB by id and <br>
 process his current age. Some of significant methods on the service <br>
-layer were covered with tests. End-To-End tests are also present. <br>
+layer were covered with tests. End-To-End tests also present. <br>
 
 <h3>In this APP were used such technologies like:</h3>
 - org.apache.maven, version 4.0.0 <br>

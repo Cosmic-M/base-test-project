@@ -13,9 +13,8 @@ public class PersonService {
     private final PersonRepository personRepository;
 
     public Person getPerson(Long id) {
-        Person person = personRepository.findById(id).orElseThrow(()
+        return personRepository.findById(id).orElseThrow(()
                 -> new RuntimeException("cannot find person by id=" + id));
-        return person;
     }
 
     public int getPersonsAge(Person person) {
